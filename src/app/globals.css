@@ -42,7 +42,9 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --font-weight-extrablack: 1000;
+  --color-myprimarycolor: "#38454A";
   --color-primary: "#1D4ED8";
+  --color-mysecondarycolor: "#248AFD";
   --color-secondary: "#F59E0B";
   --padding-small: 0.5rem;
   --padding-large: 1.5rem;
