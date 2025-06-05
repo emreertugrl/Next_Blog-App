@@ -3,10 +3,11 @@ import React from "react";
 import { Button } from "../../ui/button";
 import { Search, User } from "lucide-react";
 import MobileMenu from "./MobileMenu";
+import { ModeToggle } from "../../modeToggle";
 
 const Header = () => {
   return (
-    <div className="bg-blue-400 shadow-sm top-0">
+    <div className="bg-blue-400 font-montserrat shadow-sm top-0">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <Link href="/" className="text-2xl text-white font-bold">
           Logo
@@ -26,6 +27,7 @@ const Header = () => {
           </Link>
         </nav>
         <div className="flex items-center space-x-2">
+          <ModeToggle />
           <Button variant="outline">
             <Search />
           </Button>
