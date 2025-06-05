@@ -1,15 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { Button } from "../../ui/button";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import useStore from "../../../../store/useStore";
 
 const Footer = () => {
+  const { footerText } = useStore();
+
   return (
     <div className="bg-gray-700 text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left space-y-4">
           <Link href="/" className="text-xl text-white font-bold">
-            Logo
+            {footerText}
           </Link>
           <p className="text-sm">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo beatae et quae atque
